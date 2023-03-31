@@ -1,0 +1,263 @@
+:root {
+
+    --font-size-sm: clamp(0.71rem, 2.34vw + 0.13rem, 2rem);
+    --font-size-base: clamp(1rem, 0vw + 1rem, 1rem);
+    --font-size-md: clamp(1.4rem, -1.64vw + 1.81rem, 0.5rem);
+    --font-size-lg: clamp(1.96rem, -3.11vw + 2.74rem, 0.25rem);
+    --font-size-xl: clamp(2.74rem, -4.76vw + 3.93rem, 0.13rem);
+    --font-size-xxl: clamp(3.84rem, -6.87vw + 5.56rem, 0.06rem);
+    --font-size-xxxl: clamp(5.38rem, -9.72vw + 7.81rem, 0.03rem);
+
+}
+
+.header-nav {
+
+    font-family: fino-sans, sans-serif;
+    font-size: var(--font-size-xl);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    color: #FFFFFF;
+    opacity: 85%;
+    
+}
+
+a:link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+nav {
+
+
+    
+}
+
+nav img {
+
+    padding: 0.2rem;
+
+}
+
+
+.nav-left {
+    float: left;
+    position: relative;
+    top: -3px;
+}
+
+.nav-right {
+
+    float: right;
+    padding-top: -30px;
+    margin-right: 20px;
+    
+}
+
+.left-pages {
+
+    float: left;
+    position: relative;
+    left:-2rem;
+    top: -4rem;
+}
+
+.right-pages {
+
+    float: right;
+    position: relative;
+    right: -5rem;
+    top: -4rem;
+
+}
+
+.nav-box {
+
+    width: 100%;
+    background-color: #333333;
+
+}
+
+ul {
+    font-size: var(--font-size-md);
+    list-style-type: none;
+
+}
+
+.social-links img {
+    width: 1.5rem;
+
+}
+
+.solid-stroke {
+
+    border: none;
+    border-top: 4px solid #a57df0;
+    width: 100%;
+    
+    
+}
+
+
+.banner {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ani-clouds {
+    
+    margin: auto;
+    position: relative;
+    
+}
+
+.headline {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+
+}
+
+.band-header {
+    font-family: fino-sans, sans-serif;
+    font-size: var(--font-size-xxxl);
+    font-style: regular;
+    color: #FFFFFF;
+    opacity: 75%;
+
+}
+
+.tagline {
+    font-family: 'Philosopher', sans-serif;
+    font-style: italic;
+    font-size: var(--font-size-md);
+    opacity: 48%;
+}
+
+.arrow-pointer img {
+
+    opacity: 75%;
+    width: 3.5rem;
+    padding-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+body {
+    
+    font-family: 'Philosopher', cursive;
+    background-color: black;
+    color: #FFFFFF;
+    
+}
+
+.music-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+
+}
+
+.background-flip {
+
+    
+    background-image: url("/img/bw-bg.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.releases {
+
+    background-image: url("/img/bw-bg.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+.releases img {
+
+    width: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.about-us {
+
+    background-image: url("/img/bw-bg.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+.about-us img {
+    width: 25%;
+}
+
+
+.seance-music, .sacred-music, .castel-music {
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 6rem;
+
+}
+
+.seance-music img, .sacred-music img, .castel-music img {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    max-width: 720px;
+    width: 80%;
+
+}
+
+footer {
+    
+    background-color: #000000;
+    width: 100%;
+    font-size: var(--font-size-sm);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
