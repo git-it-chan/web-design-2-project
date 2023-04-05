@@ -10,14 +10,16 @@
 
 }
 
+
+
+
 .header-nav {
 
     font-family: fino-sans, sans-serif;
     font-size: var(--font-size-xl);
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 1rem;
+    margin: 0 auto;
     padding-top: 20px;
     color: #FFFFFF;
     opacity: 85%;
@@ -35,7 +37,7 @@ a:visited {
 
 
 nav {
-
+    padding: 1rem;
 
     
 }
@@ -48,33 +50,20 @@ nav img {
 
 
 .nav-left {
-    float: left;
-    position: relative;
-    top: -3px;
 }
 
 .nav-right {
-
-    float: right;
-    padding-top: -30px;
-    margin-right: 20px;
     
 }
 
 .left-pages {
 
-    float: left;
-    position: relative;
-    left:-2rem;
-    top: -4rem;
+
+
 }
 
 .right-pages {
-
-    float: right;
-    position: relative;
-    right: -5rem;
-    top: -4rem;
+ 
 
 }
 
@@ -82,12 +71,32 @@ nav img {
 
     width: 100%;
     background-color: #333333;
+    
 
 }
 
 ul {
     font-size: var(--font-size-md);
     list-style-type: none;
+    padding-left: 0;
+
+
+}
+
+nav ul {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.all-social-links {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    
+    
 
 }
 
