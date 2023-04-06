@@ -10,15 +10,21 @@
 
 }
 
+html {
 
+    scroll-behavior: smooth;
+    
+}
 
 
 .header-nav {
 
     font-family: fino-sans, sans-serif;
     font-size: var(--font-size-xl);
+    margin: 0 auto;
     position: absolute;
-    top: 1rem;
+    left: 35%;
+    top: 0rem;
     margin: 0 auto;
     padding-top: 20px;
     color: #FFFFFF;
@@ -33,11 +39,13 @@ a:link {
 
 a:visited {
     text-decoration: none;
+    color: #FFFFFF;
 }
 
 
 nav {
     padding: 1rem;
+    margin-top:-40px
 
     
 }
@@ -50,6 +58,9 @@ nav img {
 
 
 .nav-left {
+
+
+
 }
 
 .nav-right {
@@ -70,12 +81,14 @@ nav img {
 .nav-box {
 
     width: 100%;
+    height: 7.5rem;
     background-color: #333333;
     
 
 }
 
 ul {
+
     font-size: var(--font-size-md);
     list-style-type: none;
     padding-left: 0;
@@ -87,6 +100,7 @@ nav ul {
 
     display: flex;
     justify-content: space-between;
+    
 
 }
 
@@ -101,7 +115,9 @@ nav ul {
 }
 
 .social-links img {
-    width: 1.5rem;
+    width: 2rem;
+    padding: 0.3rem;
+    
 
 }
 
@@ -117,15 +133,15 @@ nav ul {
 
 .banner {
 
-    width: 100%;
+    height: 90vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    object-fit: fill;
+    overflow: hidden;
 
 }
 
 .ani-clouds {
-    
+    height: 100vh;
     margin: auto;
     position: relative;
     
@@ -171,6 +187,18 @@ nav ul {
     
 }
 
+.arrow-pointer-up img {
+
+    opacity: 75%;
+    width: 3.5rem;
+    position: relative;
+    margin-top: 0;
+    padding-top: 0;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 body {
     
     font-family: 'Philosopher', cursive;
@@ -180,41 +208,58 @@ body {
 }
 
 .music-video {
+    background-image: url("/img/bw-bg.png");
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: auto;
-    position: relative;
+    height: 100vh;
 
 }
 
-.background-flip {
 
-    
-    background-image: url("img/bw-bg.png");
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 
+
+
+.releases::before {
+    transform: scalex(-1);
 }
-
 
 .releases {
-
-    background-image: url("img/bw-bg.png");
+    background-image: url("/img/bw-bg.png");
     background-size: cover;
+    background-image transform: scaley(-1);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+    height: 93vh;    
 
 }
 
-.releases img {
+.arrow-pointer:hover {
+
+    filter: invert(52%) sepia(24%) saturate(6755%) hue-rotate(237deg) brightness(100%) contrast(103%);
+    
+}
+
+.arrow-pointer-up:hover {
+
+    filter: invert(52%) sepia(24%) saturate(6755%) hue-rotate(237deg) brightness(100%) contrast(103%);
+    
+}
+
+.releases-content {
+
+    transform: scalex(1);
+    transform: scaley(1);
+
+
+}
+
+.releases-content img {
 
     width: 16rem;
     display: flex;
