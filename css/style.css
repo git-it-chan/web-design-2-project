@@ -251,7 +251,7 @@ body {
 }
 
 .music-video {
-    background-image: url("/img/col-bg1.png");
+    background-image: url("img/col-bg1.png");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -272,7 +272,7 @@ body {
 
 .releases {
 
-    background-image: url("/img/col-bg2.png");
+    background-image: url("img/col-bg2.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -318,7 +318,7 @@ body {
 
 .background {
 
-    background-image: url("/img/bw-bg.png");
+    background-image: url("img/bw-bg.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -353,22 +353,28 @@ body {
 }
 
 
-.music-streamlinks {
 
+.music-streamlinks {
     position: relative;
     display: inline-block;
     max-width: 10%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
 .music-icons-span {
-
     position: absolute;
-    top: 0;
     right: 0;
     padding: 5px;
+    float: right;
+    
 
 }
+
+
 
 .seance-music, .sacred-music, .castel-music {
 
@@ -377,6 +383,11 @@ body {
     align-items: center;
     flex-direction: column;
     padding-bottom: 6rem;
+
+}
+
+.seance-music .sacred-music .castel-music img {
+
 
 }
 
