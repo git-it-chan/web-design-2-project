@@ -1,12 +1,12 @@
 :root {
 
-    --font-size-sm: clamp(0.71rem, 2.34vw + 0.13rem, 2rem);
-    --font-size-base: clamp(1rem, 0vw + 1rem, 1rem);
-    --font-size-md: clamp(1.4rem, -1.64vw + 1.81rem, 0.5rem);
-    --font-size-lg: clamp(1.96rem, -3.11vw + 2.74rem, 0.25rem);
-    --font-size-xl: clamp(2.74rem, -4.76vw + 3.93rem, 0.13rem);
-    --font-size-xxl: clamp(3.84rem, -6.87vw + 5.56rem, 0.06rem);
-    --font-size-xxxl: clamp(5.38rem, -9.72vw + 7.81rem, 0.03rem);
+--font-size-sm: clamp(0.8rem, 5.03vw + -0.46rem, 3.57rem);
+--font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+--font-size-md: clamp(1.25rem, -1.55vw + 1.64rem, 0.4rem);
+--font-size-lg: clamp(1.56rem, -2.6vw + 2.21rem, 0.13rem);
+--font-size-xl: clamp(1.95rem, -3.47vw + 2.82rem, 0.04rem);
+--font-size-xxl: clamp(2.44rem, -4.41vw + 3.54rem, 0.01rem);
+--font-size-xxxl: clamp(3.05rem, -5.54vw + 4.44rem, 0rem);
 
 }
 
@@ -87,12 +87,55 @@ nav img {
 
 }
 
+h1 {
+
+    font-size: var(--font-size-xxxl);
+
+}
+
+h2 {
+
+    font-size: var(--font-size-xxl);
+
+}
+
+h3 {
+    
+    font-size: var(--font-size-xl);
+
+}
+
+h4 {
+    
+    font-size: var(--font-size-lg);
+
+}
+
+h5 {
+    
+    font-size: var(--font-size-md);
+
+}
+
+
+p {
+    
+    font-size: var(--font-size-lg);
+
+}
+
 ul {
 
     font-size: var(--font-size-md);
     list-style-type: none;
     padding-left: 0;
 
+
+}
+
+ol {
+
+    font-size: var(--font-size-md);
 
 }
 
@@ -208,7 +251,7 @@ body {
 }
 
 .music-video {
-    background-image: url("/img/bw-bg.png");
+    background-image: url("/img/col-bg1.png");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -228,9 +271,12 @@ body {
 }
 
 .releases {
-    background-image: url("/img/bw-bg.png");
+
+    background-image: url("/img/col-bg2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
-    background-image transform: scaley(-1);
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,22 +315,60 @@ body {
 
 }
 
+
+.background {
+
+    background-image: url("/img/bw-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+.topic-title::first-letter{
+    font-weight: normal;
+    font-size: 5rem;
+}
+
+
 .about-us {
 
-    background-image: url("img/bw-bg.png");
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    display: block;
+    padding-bottom: 6rem;
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 5%;
+    max-width: 90%;
+    
     
 
 }
 
 .about-us img {
-    width: 25%;
+    width: 100%;
 }
 
+
+.music-streamlinks {
+
+    position: relative;
+    display: inline-block;
+    max-width: 10%;
+
+}
+
+.music-icons-span {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+
+}
 
 .seance-music, .sacred-music, .castel-music {
 
@@ -296,7 +380,29 @@ body {
 
 }
 
-.seance-music img, .sacred-music img, .castel-music img {
+.credits p {
+
+    font-size: 0.9rem;
+    line-height: 0.2; /* Decrease line height */
+
+}
+
+.credits {
+
+    margin-bottom: 180px; /* Decrease space after */
+
+}
+
+.seance-music {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    max-width: 720px;
+
+}
+
+.sacred-love-spells {
     display: block;
     position: relative;
     top: 50%;
@@ -306,6 +412,18 @@ body {
 
 }
 
+.castel {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 10%;
+    max-width: 720px;
+    width: 80%;
+
+}
+
+
+
 footer {
     
     background-color: #000000;
@@ -313,5 +431,10 @@ footer {
     font-size: var(--font-size-sm);
     text-align: center;
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+footer p {
+    
+    font-size: 1rem;
 }
