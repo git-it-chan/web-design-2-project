@@ -266,13 +266,9 @@ body {
 
 
 
-.releases::before {
-    transform: scalex(-1);
-}
-
 .releases {
 
-    background-image: url("img/col-bg2.png");
+    background-image: url("/img/col-bg2.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
