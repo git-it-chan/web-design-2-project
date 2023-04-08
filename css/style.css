@@ -206,7 +206,8 @@ nav ul {
 
 .band-header {
     font-family: fino-sans, sans-serif;
-    font-size: var(--font-size-xxxl);
+    font-size: 6.5rem;
+    font-weight: normal;
     font-style: regular;
     color: #FFFFFF;
     opacity: 75%;
@@ -251,7 +252,7 @@ body {
 }
 
 .music-video {
-    background-image: url("img/col-bg1.png");
+    background-image: url("/img/col-bg1.png");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -269,14 +270,12 @@ body {
 .releases {
 
     background-image: url("/img/col-bg2.png");
-    background-repeat: no-repeat;
-    background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin: auto;
     height: 93vh;    
 
 }
@@ -295,8 +294,10 @@ body {
 
 .releases-content {
 
-    transform: scalex(1);
-    transform: scaley(1);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
 
 
 }
@@ -304,7 +305,8 @@ body {
 .releases-content img {
 
     width: 16rem;
-    display: flex;
+    display: block;
+    margin: auto;
     justify-content: center;
     align-items: center;
 
