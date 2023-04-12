@@ -21,11 +21,9 @@ html {
 
     font-family: fino-sans, sans-serif;
     font-size: var(--font-size-xl);
-    margin: 0 auto;
-    position: absolute;
-    left: 35%;
-    top: 0rem;
-    margin: 0 auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
     padding-top: 20px;
     color: #FFFFFF;
     opacity: 85%;
@@ -59,12 +57,14 @@ nav img {
 
 .nav-left {
 
-
+    float: left;
 
 }
 
 .nav-right {
     
+    float: right;
+
 }
 
 .left-pages {
@@ -83,6 +83,7 @@ nav img {
     width: 100%;
     height: 7.5rem;
     background-color: #333333;
+    position: relative;
     
 
 }
@@ -97,17 +98,22 @@ h2 {
 
     font-size: var(--font-size-xxl);
 
+
 }
 
 h3 {
     
     font-size: var(--font-size-xl);
+    
 
 }
 
 h4 {
     
     font-size: var(--font-size-lg);
+    font-weight: normal;
+    line-height: 0;
+    
 
 }
 
@@ -160,6 +166,7 @@ nav ul {
 .social-links img {
     width: 2rem;
     padding: 0.3rem;
+    margin-top: -450px;
     
 
 }
@@ -169,6 +176,7 @@ nav ul {
     border: none;
     border-top: 4px solid #a57df0;
     width: 100%;
+    margin: 0;
     
     
 }
@@ -248,8 +256,19 @@ body {
     font-family: 'Philosopher', cursive;
     background-color: black;
     color: #FFFFFF;
+    margin: 0;
     
 }
+
+
+
+main {
+
+    margin-top: -41px;
+    
+}
+
+
 
 .music-video {
     background-image: url("img/col-bg1.png");
@@ -321,7 +340,7 @@ body {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-
+    padding-top: 0;
 
 }
 
@@ -342,7 +361,6 @@ body {
     left: 5%;
     max-width: 90%;
     
-    
 
 }
 
@@ -350,28 +368,40 @@ body {
     width: 100%;
 }
 
+.grid-music {
+
+    max-width: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
 
 
 .music-streamlinks {
-    position: relative;
-    display: inline-block;
-    max-width: 10%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.music-icons-span {
-    position: absolute;
-    right: 0;
-    padding: 5px;
-    float: right;
     
+    max-width: 7%;
+    float: right;
+    margin-left: 1rem;
+    
+}
+
+.ul-vertical-spacing {
+
+display: block;
 
 }
 
+.stream-icon {
+
+    text-align: webkit-match-parent;
+
+}
+
+.album-title {
+    font-weight: normal;
+    line-height: 0;
+
+}
 
 
 .seance-music, .sacred-music, .castel-music {
@@ -389,9 +419,16 @@ body {
 
 }
 
-.credits p {
+ol {
 
-    font-size: 0.9rem;
+    font-size: var(--font-size-lg);
+
+}
+
+
+
+.credits p {
+    font-size: 1.2rem;
     line-height: 0.2; /* Decrease line height */
 
 }
@@ -405,8 +442,7 @@ body {
 .seance-music {
     display: block;
     position: relative;
-    top: 50%;
-    left: 10%;
+    margin: auto;
     max-width: 720px;
 
 }
@@ -414,20 +450,16 @@ body {
 .sacred-love-spells {
     display: block;
     position: relative;
-    top: 50%;
-    left: 10%;
+    margin: auto;
     max-width: 720px;
-    width: 80%;
 
 }
 
 .castel {
     display: block;
     position: relative;
-    top: 50%;
-    left: 10%;
+    margin: auto;
     max-width: 720px;
-    width: 80%;
 
 }
 
@@ -447,3 +479,20 @@ footer p {
     
     font-size: 1rem;
 }
+
+/*@media only screen and (min-width: 7px){
+   
+    .music-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        display: flex;
+
+    }
+
+    .music-grid img {
+        max-width: 10%;
+    }
+
+  }
+  */
