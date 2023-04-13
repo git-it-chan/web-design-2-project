@@ -407,7 +407,7 @@ main {
 
 .background {
 
-    background-image: url("img/bw-bg.png");
+    background-image: url("../img/bw-bg.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -418,7 +418,7 @@ main {
 
 .topic-pages {
 
-    background-image: url("img/bw-bg.png");
+    background-image: url("../img/bw-bg.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
