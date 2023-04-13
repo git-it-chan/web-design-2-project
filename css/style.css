@@ -335,7 +335,7 @@ main {
 
 .music-video {
 
-    background-image: url("/img/col-bg1.png");
+    background-image: url("img/col-bg1.png");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -352,7 +352,7 @@ main {
 
 .releases {
 
-    background-image: url("/img/col-bg2.png");
+    background-image: url("img/col-bg2.png");
     background-size: cover;
     display: flex; 
     justify-content: center;
@@ -418,7 +418,7 @@ main {
 
 .topic-pages {
 
-    background-image: url("/img/bw-bg.png");
+    background-image: url("img/bw-bg.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
