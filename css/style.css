@@ -112,8 +112,6 @@ nav img {
 
 h1 {
 
-    
-    padding-left: 5%;
     font-family: fino-sans, sans-serif;
     font-size: var(--font-size-xxxl);
 
@@ -426,6 +424,12 @@ main {
     background-size: cover;
     background-attachment: fixed;
     padding-top: 0;
+
+}
+
+.topic-title {
+
+    padding-left: 5%;
 
 }
 
@@ -768,12 +772,20 @@ footer p {
 
     }
 
-    .embed-video iframe {
 
-        width: 80vh;
-        height: 80vh;
+    .band-header {
+
+        font-size: 8rem;
 
     }
+
+    .tagline {
+
+        font-size: 2rem;
+
+    }
+
+
 
     .seance-1, .seance-2, .seance-3, .seance-4, .sls-1, .sls-2, .castel-1, .castel-2, .castel-3, .castel-4 {
 
