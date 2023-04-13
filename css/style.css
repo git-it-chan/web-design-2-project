@@ -20,13 +20,17 @@ html {
 .header-nav {
 
     font-family: fino-sans, sans-serif;
-    font-size: var(--font-size-xl);
-    margin: auto;
+    font-size: var(--font-size-xxl);
+    font-weight: normal;
+    width: 100%;
+    height: 100%;
+    position: absolute;
     display: flex;
+    margin: 0;
+    top: 5%;
     justify-content: center;
-    padding-top: 20px;
-    color: #FFFFFF;
-    opacity: 85%;
+    align-items: center;
+    padding-top: -340px;
     
 }
 
@@ -46,7 +50,8 @@ a:visited {
 
 
 nav {
-    padding: 1rem;
+
+    padding: 0.5rem;
     margin-top:-40px
 
     
@@ -55,6 +60,7 @@ nav {
 nav img {
 
     padding: 0.2rem;
+    
 
 }
 
@@ -62,33 +68,46 @@ nav img {
 .nav-left {
 
     float: left;
+    padding-left: 0.5rem;
+    
 
 }
 
 .nav-right {
     
     float: right;
+    padding-right: 0.5rem;
 
 }
 
 .left-pages {
 
-
+    z-index: 1;
 
 }
 
 .right-pages {
  
+    z-index: 1;
 
 }
 
 .nav-box {
 
     width: 100%;
-    height: 7.5rem;
+    height: 9rem;
     background-color: #333333;
     position: relative;
 
+}
+
+.nav-box-purple {
+
+    width: 100%;
+    height: 9rem;
+    background-color: #462C5A;
+    position: relative;
+    background-color: rgba(70, 44, 90, 0.75);
 }
 
 h1 {
@@ -159,7 +178,8 @@ nav ul {
 
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
 
 }
 
@@ -171,9 +191,9 @@ nav ul {
 
 .social-links img {
 
-    width: 2rem;
-    padding: 0.3rem;
-    margin-top: -480px;
+    width: 1.5rem;
+    padding: 0.2 rem;
+    margin-top: 35px;
 
 }
 
@@ -256,6 +276,8 @@ nav ul {
     
 }
 
+
+
 body {
     
     font-family: 'Philosopher', cursive;
@@ -314,6 +336,14 @@ main {
 
 }
 
+.arrow-pointer, .arrow-pointer-up {
+
+    transition: filter 0.2s ease-in-out;
+
+}
+
+
+
 .arrow-pointer:hover {
 
     filter: invert(52%) sepia(24%) saturate(6755%) hue-rotate(237deg) brightness(100%) contrast(103%);
@@ -365,11 +395,9 @@ main {
 }
 
 
-.about-us {
+.about-us p {
 
     flex-direction: column;
-    display: block;
-    padding-bottom: 6rem;
     display: block;
     position: relative;
     top: 50%;
@@ -378,9 +406,21 @@ main {
 
 }
 
+
+
 .about-us img {
-    width: 100%;
+
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 90%;
+    max-width: 720px;
+
 }
+
+
+
+
 
 .grid-music {
 
@@ -426,7 +466,7 @@ main {
 
 }
 
-.seance-music .sacred-music .castel-music img {
+.seance-music img, .sacred-music img, .castel-music img {
 
 
 }
@@ -481,6 +521,8 @@ ol {
 
 
 
+
+
 footer {
     
     background-color: #000000;
@@ -510,6 +552,41 @@ footer p {
         width: 608px;
         height: 342px;
 
+    }
+
+    .about-us p {
+
+        flex-direction: column;
+        display: block;
+        position: relative;
+        top: 50%;
+        left: 5%;
+        max-width: 90%;
+
+        }
+        
+    .about-us img {
+
+        flex-direction: column;
+        display: block;
+        position: relative;
+        max-width: 90%;
+        
+    }
+
+    .bio-photo {
+
+        width: 2px;
+
+    }
+
+    .bw-bandphoto img {
+
+    flex-direction: column;
+    display: block;
+    position: relative;
+    max-width: 9%;
+    
     }
 
     .music-container {
@@ -594,5 +671,7 @@ footer p {
     .music-grid img {
         max-width: 10%;
     }
+
+
 
   }
