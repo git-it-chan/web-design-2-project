@@ -112,14 +112,28 @@ nav img {
 
 h1 {
 
+    
+    padding-left: 5%;
+    font-family: fino-sans, sans-serif;
     font-size: var(--font-size-xxxl);
 
 }
 
 h2 {
 
+    font-family: fino-sans, sans-serif;
     font-size: var(--font-size-xxl);
+    font-weight: 800;
+    letter-spacing: 0.1rem;
 
+
+}
+
+h2 span {
+
+    font-family: 'Philosopher', cursive;
+    font-weight: normal;
+    font-size: 0.5em;
 
 }
 
@@ -132,9 +146,11 @@ h3 {
 
 h4 {
     
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-base);
     font-weight: normal;
-    line-height: 0;
+    line-height: 
+    font-style: italic;
+    word-wrap: break-word;
     
 
 }
@@ -145,10 +161,23 @@ h5 {
 
 }
 
+.project-title {
+    
+    letter-spacing: 0.5rem;
+    margin: 0;
+    font-size: 2rem;
+    padding-bottom: 5%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
 
 p {
     
     font-size: var(--font-size-lg);
+    word-wrap: break-word;
 
 }
 
@@ -389,9 +418,20 @@ main {
 
 }
 
+.topic-pages {
+
+    background-image: url("/img/bw-bg.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 0;
+
+}
+
 .topic-title::first-letter{
     font-weight: normal;
-    font-size: 5rem;
+    font-size: 8rem;
 }
 
 
@@ -420,9 +460,28 @@ main {
 
 
 
+.image-release {
+    display: grid;
+    max-width: 100%;
+    margin: auto;
+    
 
+}
 
-.grid-music {
+.music-container {
+        
+    display: grid;
+    max-width: 85%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.grid-container {
+
+    max-width: 85%;
+    margin: auto;
 
     
 
@@ -449,11 +508,15 @@ main {
 
 }
 
-.album-title {
-    font-weight: normal;
+.album-title p {
+
     line-height: 0;
+    word-wrap: break-word;
+
 
 }
+
+
 
 
 .seance-music, .sacred-music, .castel-music {
@@ -463,17 +526,15 @@ main {
     align-items: center;
     flex-direction: column;
     padding-bottom: 6rem;
+    
 
 }
 
-.seance-music img, .sacred-music img, .castel-music img {
 
-
-}
 
 ol {
 
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-md);
 
 }
 
@@ -481,14 +542,41 @@ ol {
 
 .credits p {
 
-    font-size: 1.2rem;
-    line-height: 0.2; /* Decrease line height */
-
+    max-width: 100%;
+    font-size: 1rem;
+    word-wrap: break-word;
+    
+    
 }
+    
+    
+
 
 .credits {
 
-    margin-bottom: 180px; /* Decrease space after */
+    margin-bottom: 6rem; /* Decrease space after */
+   
+}
+
+.seance-music-background {
+
+    padding-top: 1%;
+    background-color: rgba(70, 28, 178, 0.25);
+
+}
+
+.sacred-music-background {
+
+    padding-top: 1%;
+    background-color: rgba(199, 173, 80, 0.25);
+
+}
+
+.castel-music-background {
+
+    padding-top: 1%;
+    background-color: rgba(255, 75, 137, 0.2);
+    padding-bottom: 5%;
 
 }
 
@@ -498,6 +586,7 @@ ol {
     position: relative;
     margin: auto;
     max-width: 720px;
+    
 
 }
 
@@ -537,6 +626,7 @@ footer p {
     
     font-size: 1rem;
 }
+
 
 
 @media only screen and (min-width: 768px){
@@ -582,59 +672,83 @@ footer p {
 
     .bw-bandphoto img {
 
-    flex-direction: column;
-    display: block;
-    position: relative;
-    max-width: 9%;
+        flex-direction: column;
+        display: block;
+        position: relative;
+        max-width: 9%;
     
     }
 
-    .music-container {
-        position: relative;
-        float: left;
-        margin: 10px;
 
+    .project-title {
+    
+        letter-spacing: 0.8rem;
+        margin: 0;
+        padding-left: 0;
+        font-size: 4rem;
+        padding-bottom: 5%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .album-title {
+
+        line-height: 0.5;
+        word-wrap: break-word;
+    
+    }
+
+
+    .music-wrapper {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+
+    }
+
+
+    
+    .grid-container {
+    
+        max-width: 85%;
+        margin: auto;
+    
     }
 
     .image-release {
-
-        width: 2%;
-
-    }
-
-
-    .grid-music {
-
-    display: flex;
-    
-    justify-content: flex-start;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
-    }
-
-    .grid-music img {
-
-        width: 1000%;
-
-    }
-
-    .seance-music {
-        
-    display: flex
-    position: relative;
+    display: grid;
+    max-width: 100%;
     margin: auto;
-    max-width: 720px;
     
-    }
 
-    .castel {
+}
+
+.music-container {
+        
+    display: grid;
+    max-width: 85%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
     
-        display: block;
-        position: relative;
-        margin: auto;
-        max-width: 1080px;
+}
+
+
+
+.credits p {
+
+    max-width: 100%;
+    font-size: 1rem;
     
-    }
+    
+    
+}
+
+
+
 
     footer p {
 
@@ -644,8 +758,10 @@ footer p {
   }
 
 
-  @media only screen and (min-width: 1920px){
+  @media only screen and (min-width: 920px){
    
+
+    
     p {
 
     font-size: var(--font-size-base);
@@ -659,18 +775,59 @@ footer p {
 
     }
 
-    .music-grid {
+    .seance-1, .seance-2, .seance-3, .seance-4, .sls-1, .sls-2, .castel-1, .castel-2, .castel-3, .castel-4 {
+
+        width: 200%;
+        margin: 0;
         
+    }
+
+    .project-title {
+    
+        letter-spacing: 0.8rem;
+        margin: 0;
+        padding-left: 0;
+        font-size: 5rem;
+        padding-bottom: 5%;
+        width: 150%;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .album-title {
+
+        line-height: 1;
+        word-wrap: break-word;
+    
+    }
+
+    
+    .music-wrapper {
+
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 1rem;
-        display: flex;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 8rem;
+        max-width: 200%;
+        justify-content: center;
+        padding: 0;
+        
+        
+        
 
     }
 
-    .music-grid img {
-        max-width: 10%;
+
+   
+    .credits p {
+
+        max-width: 100%;
+        font-size: 1rem;
+        word-wrap: break-word;
+        
+        
     }
+
 
 
 
