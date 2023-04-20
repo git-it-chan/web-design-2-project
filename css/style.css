@@ -238,7 +238,7 @@ nav ul {
 
 .banner {
 
-    height: 90vh;
+    height: 95vh;
     display: flex;
     object-fit: fill;
     overflow: hidden;
@@ -361,7 +361,7 @@ main {
     align-items: center;
     flex-direction: column;
     margin: auto;
-    height: 93vh;    
+    height: 100vh;    
 
 }
 
@@ -397,7 +397,7 @@ main {
 
 .releases-content img {
 
-    width: 16rem;
+    width: 80%;
     display: block;
     margin: auto;
     justify-content: center;
@@ -690,6 +690,35 @@ footer p {
     }
 
 
+    .releases-content {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 6rem;
+        max-width: 65vh;
+        position: relative;
+       
+    
+    
+    }
+    
+    .releases-content p {
+
+        word-wrap: break-word;
+
+    }
+
+    .releases-content img {
+    
+        width: 100%;
+        display: grid;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    
+    
+    }
+
     
     
     
@@ -862,9 +891,9 @@ footer p {
     margin: auto;
     
 
-}
+    }
 
-.music-container {
+    .music-container {
         
     display: grid;
     max-width: 85%;
@@ -872,18 +901,18 @@ footer p {
     justify-content: center;
     align-items: center;
     
-}
+    }
 
 
 
-.credits p {
+    .credits p {
 
     max-width: 100%;
     font-size: 1rem;
     
     
     
-}
+    }
 
 
 
@@ -954,12 +983,17 @@ footer p {
     }
 
 
+    .releases-content {
+
+        max-width: 90vh;
+
+    }
 
 
     
     .about-us img {
 
-    max-width: 90%;
+    max-width: 100%;
     
     }
     
@@ -967,21 +1001,24 @@ footer p {
     
     padding-right: 10%;
     float: right;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
 
     }
     
     .about-columns {
 
     padding-top: 2rem;
-    column-count: 2;
+
+    padding-bottom: 1rem;
 
     }
 
     .about-columns p {
 
-    padding-left: 5%;
-    max-width: 85%;
+    padding-left: 10%;
+    max-width: 100%;
+    
+    
 
 
     }
@@ -995,25 +1032,27 @@ footer p {
     
 
     .live-wrapper {
+        
         padding-left: 5%;
         display: flex;
         width: 90%;
-        column-count: 2;
-        margin-top: -10%;
+        column-count: 1;
+        margin-top: -15rem;
+        padding-top: 5%;
         padding-bottom: 10%;
         
 
     }
 
     .live-wrapper img {
-        
+
+        padding-top: -20rem;
         max-width: 45%;
 
     }
 
 
     .live-photo {
-    
     
     flex-grow: 1;
 
@@ -1029,8 +1068,6 @@ footer p {
     .live-text {
         
         float: right;
-        position: relative;
-        top: -1rem;
         flex-grow: 1;
         
         
@@ -1040,7 +1077,7 @@ footer p {
     
     .live-text p {
         
-        padding-left: 5%;
+        padding-left: 10%;
         max-width: 100%;
         
         
@@ -1086,7 +1123,7 @@ footer p {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 12rem;
-        max-width: 200%;
+        max-width: 100%;
         justify-content: center;
         padding: 0;
         
@@ -1096,6 +1133,17 @@ footer p {
     }
 
 
+    .image-release {
+
+        max-width: 100%;
+
+    }
+
+    .music-container {
+
+        margin: auto;
+
+    }
    
     .credits p {
 
@@ -1105,7 +1153,6 @@ footer p {
         
         
     }
-
 
 
 
